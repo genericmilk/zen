@@ -1,0 +1,33 @@
+.glow{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: black;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: -1;
+        .ember{
+            opacity: 0;
+            transition: opacity 4s;
+            height: 500px;
+            width: 500px;
+            position: absolute;
+            &.show{
+                opacity: 1;
+            }
+            &.yellow{
+                background: radial-gradient(circle, rgba(93,80,38,1) 0%, rgba(93,80,38,0) 50%);
+            }
+            &.purple{
+                background: radial-gradient(circle, rgba(59,23,102,1) 0%, rgba(59,23,102,0) 50%);
+            }      
+            &.blue{
+                background: radial-gradient(circle, rgba(42,204,255,1) 0%, rgba(42,204,255,0) 50%);
+            }  
+            &.brightPurple{                
+                background: radial-gradient(circle, rgba(111,6,193,1) 0%, rgba(111,6,193,0) 50%);   
+            }
+        }
+    }
